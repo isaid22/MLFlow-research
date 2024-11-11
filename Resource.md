@@ -3,7 +3,15 @@ In the case of LLM Verbatim, the production scenario of model serving is driven 
 for inference. In such case, the returned payload consist of results sought indicated by the system prompt. Also, such payload returned by GPT4o-mini does not contain
 information regarding resource utilization on the server side. This means we can only measure the resource utilization in the client side.
 
+Implementing MLFlow to track or monitor metrics may be easily done using a context wrap:
+
+```python
+with mlflow.start_run():
+```
+
+
 Below are examples showing how to use MLFlow's logging capability for resource utilization metrics.
+
 
 ### Resource monitoring
 As an example, below is a function that measures CPU and memory usage of an application running on client side:
