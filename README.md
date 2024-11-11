@@ -1,4 +1,4 @@
-# MLflow-Research
+# MLFlow-Research
 ## Introduction 
 
 MLFlow is a platform to manage machine learning model lifecycle, including experimentation, training, and deployment. It is highly customizable 
