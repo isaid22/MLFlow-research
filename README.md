@@ -21,12 +21,13 @@ mlflow.set_experiment("openai_text_generation_monitoring")
 ## View metrics in the MLFlow UI
 Once the server is up and running, open the MLflow UI at http://your-server-ip:5000. In the UI, you can:
 
-1. Select the Experiment: Choose your experiment, like "openai_text_generation_monitoring."
-2. View Runs and Metrics: Each API call will log a new run, where you can view and compare BLEU, ROUGE, and perplexity metrics over time.
-3. Create Line Graphs: MLflow allows you to visualize these metrics as line graphs. You can:
+1. Select the Experiment: Choose your experiment by their name
+2. View Runs and Metrics: Each API call will log a new run, where you can view the metrics over time.
+3. Create Line Graphs: MLflow allows visualizing these metrics as line graphs. One may:
     * Select metrics defined and calculated in the application code.
     * View trends over runs to understand how performance varies over time.
     * Adjust the x-axis to run index, time, or another metric.
 
-
 Overall, as long as the metrics may be quantified programmitically, these metrics may be tracked and displayed by the MLFlow UI. 
+
+
