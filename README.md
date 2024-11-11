@@ -27,3 +27,6 @@ Once the server is up and running, open the MLflow UI at http://your-server-ip:5
     * Select metrics defined and calculated in the application code.
     * View trends over runs to understand how performance varies over time.
     * Adjust the x-axis to run index, time, or another metric.
+
+
+Overall, as long as the metrics may be quantified programmitically, these metrics may be tracked and displayed by the MLFlow UI. 
